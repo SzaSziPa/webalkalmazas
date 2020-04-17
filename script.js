@@ -6,38 +6,48 @@
 </div>*/
 let gallery = [
 {
-    nev: 'Barlang Algarve környékén, Portugália',
-    leiras: 'img_1'
+    leiras: 'Barlang Algarve környékén, Portugália',
+    nev: 'img_1'
 }, 
 {
-    nev: 'Gásadalur, Feröer-szigetek',
-    leiras: 'img_2'
+    leiras: 'Gásadalur, Feröer-szigetek',
+    nev: 'img_2'
 },
 {
-    nev: 'Geiranger fjord, Norvégia',
-    leiras: 'img_3'
+    leiras: 'Geiranger fjord, Norvégia',
+    nev: 'img_3'
 },
 {
-    nev: 'Moreine-tó, Kanada',
-    leiras: 'img_4'
+    leiras: 'Moreine-tó, Kanada',
+    nev: 'img_4'
 },
 {
-    nev: 'Navagio-öböl, Görögország',
-    leiras: 'img_5'
+    leiras: 'Navagio-öböl, Görögország',
+    nev: 'img_5'
 },
 {
-    nev: 'Plitvicei tavak, Horvátország',
-    leiras: 'img_6'
+    leiras: 'Plitvicei tavak, Horvátország',
+    nev: 'img_6'
 },
 {
-    nev: 'Provence, Franciaország',
-    leiras: 'img_7'
+    leiras: 'Provence, Franciaország',
+    nev: 'img_7'
 },
 {
-    nev: 'Vatnajokull gleccserbarlang, Izland',
-    leiras: 'img_8'
+    leiras: 'Vatnajokull gleccserbarlang, Izland',
+    nev: 'img_8'
 },
 {
-    nev: 'Yosemite Nemzeti Park, Amerikai Egyesült Államok',
-    leiras: 'img_9'
+    leiras: 'Yosemite Nemzeti Park, Amerikai Egyesült Államok',
+    nev: 'img_9'
 }];
+gallery.forEach(element => {
+    $('.gallery').append(
+        `<div class="gallery__img-block">
+        <span class="">
+            ${element.leiras}
+        </span>
+        <img src="gallery/${element.nev}.jpg" alt=""></img>
+    </div>`
+    )
+})

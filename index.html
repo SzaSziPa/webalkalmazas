@@ -2,14 +2,33 @@
 <html>
     <head></head>
     <title>Kepnezegeto</title>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8"></meta>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/vit-gallery.css">
     <Body>
         <div class="gallery">
+            <div class="gallery__controls"></div>
         </div>
-        </div>
-        </section>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="script.js"></script>
+        <script src="scripts/vit-gallery.js"></script>
+        <script>$('.gallery').vitGallery({
+              buttons:true,
+              galleryHeight:'auto',
+              imgBlockClass:'gallery__img-block',
+              controls:'thumbnails',// points thumbnails
+              controlsClass:'gallery__controls',
+              thumnailWidth: 90,
+              thumnaiHeight: 60,
+              thumbnailMargin: 5,
+              animateSpeed: 1000,
+              description:true,
+              imgPadding: 5,
+              autoplay:false,
+              autoplayDelay: 3000,
+              fullscreen:true,
+              transition:'slide' // slide crossfade
+            })
+            </script>
     </Body>
 </html>
